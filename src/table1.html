@@ -18,13 +18,16 @@
 </head>
 <body>
     <table>
-        <tr> <!-- 행 -->
+        <thead>
+            <tr> <!-- 행 -->
             <th>번호</th> <!-- 열 제목 -->
             <th>상품명</th>
             <th>수량</th>
             <th>가격</th>
         </tr>
-        <tr>
+        </thead>
+        <tbody>
+            <tr>
             <td>1</td>
             <td>콜라</td>
             <td>1개</td>
@@ -42,10 +45,13 @@
             <td>3개</td>
             
         </tr>
-        <tr>
+        </tbody>
+        <tfoot>
+             <tr>
             <td>총 금액</td>
             <td colspan="3">6,500원</td>
         </tr>
+        </tfoot>
     </table>
 </body>
 </html>
