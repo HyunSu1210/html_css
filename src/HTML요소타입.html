@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 요소 타입 (블록/인라인)</title>
+    <style>
+        .movie {
+            background-color: aqua;
+            color: darkblue;
+        }
+        .TV {
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 블록 요소는 해당 라인 전체를 차지함-->
+    <span style="border: 2px solid salmon;">span 요소는 display 속성 값이 블록인 요소가 아닙니다.</span>
+    <p style="border: 2px solid salmon;">p 요소는 display 속성 값이 블록인 요소입니다.</p>
+    <div class="movie">
+        <p>영화 소개</p>
+        <p style="background-color: lightgreen;">영화를 소개하는 페이지입니다.</p>
+        <b style="background-color: black; color:aliceblue;">강조효과</b>
+        <p><b style="border: 1px solid red;">글자를 강조</b>하는 볼드 태그는 인라인 속성입니다.</p>
+    </div>
+    <div class="TV">
+        <p>TV 프로그램 소개</p>
+        <p>TV 프로그램을 소개하는 페이지입니다.</p>
+    </div>
+    
+    </body>
+</html>
