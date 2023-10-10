@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index 예제</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .box-parent {
+            width: 300px;
+            height: 215px;
+            background-color: royalblue;
+            position: relative;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border: 4px dashed red;
+            position: relative;
+        }
+        .box-child1 {
+            position: relative;
+        }
+        .box-child2 {
+            top: 50px;
+            left: 50px;
+            position: absolute;
+        }
+        .box-child3 {
+            position: relative;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box-parent">
+        <div class="box box-child1">1</div>
+        <div class="box box-child2">2</div>
+        <div class="box box-child3">3</div>
+    </div>
+    
+</body>
+</html>
