@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+       
+       ul {
+        /* 리스트 목록(점) 제거 */
+        list-style: none;
+       }
+       li {
+        float: left;
+       }
+       a {
+        display: block;
+        padding: 10px 20px;
+        background-color: #ccc;
+       }
+       /* list : 방문 전, visited : 방문 후, hover : 마우스 올려놨을 때, active : 클릭하는동안 */
+       a:link,a:visited {
+        color: black;
+        /* 하이퍼링크 클릭 전, 후 상태 같음 */
+        text-decoration: none;
+       }
+        a:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        
+        </ul>
+    </nav>
+</body>
+</html>
