@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .parent {
+            font-size: 1vw;
+            font-weight: bold;
+        }
+        .child {
+            font-size: 2vw;
+        }
+        .child-to-child {
+            font-size: 80%;
+            font-weight: lighter;
+        }
+        h1 {
+            color: #f00;
+        }
+        span {
+            font-variant: small-caps;
+            text-align: center;
+        }
+        h3 {
+            /* display: inline; // 블록이어야 전체가 내 영역, 인라인은 영역이 한정되어 있어서 정렬해도 티가 안 남 */
+            text-align: center;
+        }
+        .car-name {
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+        }
+        .test-text {
+            letter-spacing: 2px;
+            line-height: 1.4em;
+            font-size: 20px;
+            font-weight: bold;
+            /* 가로거리 세로거리 (번짐정도) 색상*/
+            text-shadow: 1px 1px 1px #ffa500;
+        }
+        .shadow1 {
+            color: red;
+            text-shadow: 1px 1px black;
+        }
+        .shadow2 {
+            text-shadow: 5px 5px 3px red;
+        }
+        .shadow3 {
+            text-shadow: 7px -7px red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>부모의 폰트 크기입니다.</p>
+        <div class="child">
+            <p>자식의 폰트 크기입니다.</p>
+            <div class="child-to-child">
+                <p>자식의 자식 폰트 크기입니다.</p>
+            </div>
+        </div>
+    </div>
+    <div class="car-name">
+        <span>카이앤</span>
+        <span>파나메라</span>
+        <span>타이칸</span>
+    </div>
+    <a href="http://naver.com">네이버</a>
+    <p class="test-text">행복의 한쪽문이 닫히면..</p>
+    <h2 class="shadow1">HTML</h2>
+    <h2 class="shadow2">CSS</h2>
+    <h2 class="shadow3">JAVA</h2>
+</body>
+</html>
