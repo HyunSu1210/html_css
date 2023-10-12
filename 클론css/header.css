@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+#container {
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* column 방향으로 정렬 */
+    justify-content: center;
+    align-items: center;
+    
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------- 로그인 ----------------------- */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.login {
+    background-image: url(../클론image/로그인.png);
+    background-repeat: no-repeat; /* 이미지 반복 안 함 */
+    background-size: cover; /* 이미지 꽉 채우기 */
+    color: white;
+    width: 80px;
+    height: 30px;
+    margin-left: 15px;
+    text-align: right;
+    line-height: 30px;
+    position: relative;
+    
+}
+.login:hover .login-in{
+    opacity: 1;
+}
+#login1:hover {
+    background-color: rgb(1, 130, 205);
+    color: white;
+    border-top-left-radius: 10px; /* 왼쪽 상단 */
+    border-bottom-left-radius: 10px; /* 왼쪽 하단 */
+}
+#login2:hover {
+    background-color: rgb(1, 130, 205);
+    color: white;
+    border-top-right-radius: 10px; /* 왼쪽 상단 */
+    border-bottom-right-radius: 10px; /* 왼쪽 하단 */
+}
+.login-in-in {
+    width: 60px;
+    height: 35px;
+    text-align: center;
+}
+
+.login-in { /* 개인,기업 */
+    opacity: 0;
+    background-image: url(../클론image/로그인\,인증센터.png);
+    background-repeat: no-repeat; /* 이미지 반복 안 함 */
+    background-size: cover; /* 이미지 꽉 채우기 */
+    color: rgb(1, 130, 205);
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 35px;
+    left: -20px;
+    text-align: center;
+    display: flex;
+    float:left;
+}
+
+/* -------------------- 인증센터 ----------------------- */
+.center {
+    background-image: url(../클론image/인증센터.png);
+    background-repeat: no-repeat; /* 이미지 반복 안 함 */
+    background-size: cover; /* 이미지 꽉 채우기 */
+    color: black;
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    text-align: right;
+    line-height: 30px;
+    position: relative;
+}
+.center:hover .center-in{
+    opacity: 1;
+}
+#center1:hover {
+    background-color: rgb(232, 232, 234);
+    color: black;
+    border-top-left-radius: 10px; /* 왼쪽 상단 */
+    border-bottom-left-radius: 10px; /* 왼쪽 하단 */
+}
+#center2:hover {
+    background-color: rgb(232, 232, 234);
+    color: black;
+    border-top-right-radius: 10px; /* 왼쪽 상단 */
+    border-bottom-right-radius: 10px; /* 왼쪽 하단 */
+}
+.center-in-in {
+    width: 60px;
+    height: 35px;
+    text-align: center;
+}
+
+.center-in { /* 개인,기업 */
+    opacity: 0;
+    background-image: url(../클론image/로그인\,인증센터.png);
+    background-repeat: no-repeat; /* 이미지 반복 안 함 */
+    background-size: cover; /* 이미지 꽉 채우기 */
+    color: rgb(87, 87, 87);
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 35px;
+    left: -10px;
+    text-align: center;
+    display: flex;
+    float:left;
+
+}
+
+/* -------------------- 메뉴 ----------------------- */
+.list {
+    padding-left: 10px;
+    display: flex;
+    float: left;
+    white-space: nowrap; /* 화면 크기 변환시 줄바꿈 일어나지 않음 */
+    
+}
+li:hover, .list-in-title:hover{
+    color: rgb(2, 132, 200);
+    text-decoration: underline; /* 밑줄 */
+}
+.list-in {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.list-in-title {
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+ul {
+    padding: 0;
+    
+}
+li {
+    list-style: none;
+    color: rgb(87, 87, 87);
+
+}
+
+.list-in-in {
+    border: 1px solid black;
+    background-color: white;
+    width: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 30px;
+    left: -60px;
+    opacity: 0;
+    z-index: 5;
+}
+
+.list-in:hover .list-in-in {
+    opacity: 1;
+}
+
+/* -------------------- 배너 ----------------------- */
+
+[name="slide"] {display:none;}
+.slidebox {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+.slidebox img {max-width: 100%;}
+.slidebox .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+}
+.slidebox .slideitem {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; /* 모든 인라인 요소의 수직 정렬을 위해 사용됨 */
+    width: 100%;
+    transition: all .35s;
+}
+.slidebox .slideitem label {
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    cursor: pointer;
+
+}
+label.left {
+    left: 20px;
+    background-image: url(../클론image/왼쪽화살표.png);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+label.right {
+    right: 20px;
+    background-image: url(../클론image/오른쪽화살표.png);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0); animation:slide01 20s infinite;}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%); animation:slide02 20s infinite;}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%); animation:slide03 20s infinite;}
+[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%); animation:slide04 20s infinite;}
+[id="slide05"]:checked ~ .slidelist .slideitem {transform:translateX(-400%); animation:slide05 20s infinite;}
+
+@keyframes slide01 {
+    0% {left: 0%;}
+    18% {left: 0%;}
+    20% {left: -100%;}
+    38% {left: -100%;}
+    40% {left: -200%;}
+    58% {left: -200%;}
+    60% {left: -300%;}
+    78% {left: -300%;}
+    80% {left: -400%;}
+    98% {left: -400%;}
+    100% {left: 0%;}
+}
+@keyframes slide02 {
+    0% {left: 0%;}
+    18% {left: 0%;}
+    20% {left: -100%;}
+    38% {left: -100%;}
+    40% {left: -200%;}
+    58% {left: -200%;}
+    60% {left: -300%;}
+    78% {left: -300%;}
+    80% {left: -400%;}
+    98% {left: -400%;}
+    100% {left: 0%;}
+}
+@keyframes slide03 {
+    0% {left: 0%;}
+    18% {left: 0%;}
+    20% {left: -100%;}
+    38% {left: -100%;}
+    40% {left: -200%;}
+    58% {left: -200%;}
+    60% {left: -300%;}
+    78% {left: -300%;}
+    80% {left: -400%;}
+    98% {left: -400%;}
+    100% {left: 0%;}
+}
+@keyframes slide04 {
+    0% {left: 0%;}
+    18% {left: 0%;}
+    20% {left: -100%;}
+    38% {left: -100%;}
+    40% {left: -200%;}
+    58% {left: -200%;}
+    60% {left: -300%;}
+    78% {left: -300%;}
+    80% {left: -400%;}
+    98% {left: -400%;}
+    100% {left: 0%;}
+}
+@keyframes slide05 {
+    0% {left: 0%;}
+    18% {left: 0%;}
+    20% {left: -100%;}
+    38% {left: -100%;}
+    40% {left: -200%;}
+    58% {left: -200%;}
+    60% {left: -300%;}
+    78% {left: -300%;}
+    80% {left: -400%;}
+    98% {left: -400%;}
+    100% {left: 0%;}
+}

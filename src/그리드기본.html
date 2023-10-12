@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: royalblue;
+            border: 1px solid orangered;
+        }
+        .grid-item:nth-child(2n) {
+            background-color: orange;
+        }
+        .grid-container {
+            height: 400px;
+            width: 400px;
+            display: grid;
+            background-color: bisque;
+            /* auto-fit : 자동 채우기, 컨테이너 기준 */
+            /* auto-fill : 자동 채우기, 아이템 기준 */
+            grid-template-columns: 100px 100px 100px; /* 그리드 틀 짜기(3열) */
+            /* grid-template-rows: 100px 100px; 그리드 틀 짜기(2행) */
+            gap: 2px;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">그리드 박스 1번</div>
+        <div class="grid-item">그리드 박스 2번</div>
+        <div class="grid-item">그리드 박스 3번</div>
+        <div class="grid-item">그리드 박스 4번</div>
+        <div class="grid-item">그리드 박스 5번</div>
+    </div>
+    
+</body>
+</html>
