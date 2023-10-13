@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>우리은행</title>
     <link rel="stylesheet" href="../클론css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../클론image/title로고.png">
 </head>
-<body>
+    <body>
     <div id="container">
         <div class="header">
             <div class="titleimage"> <img src="../클론image/타이틀.png" alt="title"></div>
@@ -119,12 +123,12 @@
                     <div class="list-in-in" id="list-in-9">
                         <a href="#"><p class="list-in-title">LANGUAGE</p></a>
                         <ul class="header-list-ul">
-                            <li><a href="#" class="aLan"><img src="../클론image/all_svc_flag_us.gif" alt="미국"> English</a></li>
-                            <li><a href="#" class="aLan"><img src="../클론image/all_svc_flag_china.gif" alt="중국"> Chinese (中國語)</a></li>
-                            <li><a href="#" class="aLan"><img src="../클론image/all_svc_flag_japan.gif" alt="일본"> Japanese (日本語)</a></li>
-                            <li><a href="#" class="aLan"><img src="../클론image/all_svc_flag_philippines.gif" alt="필리핀"> Filipino (Tagalog)</a></li>
-                            <li><a href="#" class="aLan"><img src="../클론image/all_svc_flag_vietnam.gif" alt="베트남"> Vietnamese (tiếng Việt)</a></li>
-                            <li><a href="#" class="aLan"><img src="../클론image/all_svc_flag_mongolia.gif" alt="몽골"> Mongolian (Монгол хэл)</a></li>
+                            <li class="header-list-2"><a href="#" class="aLan"><img src="../클론image/all_svc_flag_us.gif" alt="미국"> English</a></li>
+                            <li class="header-list-2"><a href="#" class="aLan"><img src="../클론image/all_svc_flag_china.gif" alt="중국"> Chinese (中國語)</a></li>
+                            <li class="header-list-2"><a href="#" class="aLan"><img src="../클론image/all_svc_flag_japan.gif" alt="일본"> Japanese (日本語)</a></li>
+                            <li class="header-list-2"><a href="#" class="aLan"><img src="../클론image/all_svc_flag_philippines.gif" alt="필리핀"> Filipino (Tagalog)</a></li>
+                            <li class="header-list-2"><a href="#" class="aLan"><img src="../클론image/all_svc_flag_vietnam.gif" alt="베트남"> Vietnamese (tiếng Việt)</a></li>
+                            <li class="header-list-2"><a href="#" class="aLan"><img src="../클론image/all_svc_flag_mongolia.gif" alt="몽골"> Mongolian (Монгол хэл)</a></li>
                         </ul>
                     </div>
                 </div>
@@ -133,7 +137,7 @@
                 <a href="#"><img src="../클론image/회색돋보기.png" alt=""></a>
             </div>
         </div>
-        <div class="section">
+        
             <div class="slidebox">
                 <input type="radio" name="slide" id="slide01" checked>
                 <input type="radio" name="slide" id="slide02">
@@ -180,26 +184,29 @@
                 </ul>
             </div>
             <div class="centerMenu">
-                <ul class="centerMenu-list-ul">
-                    <li id="cML-1" class="centerMenu-list">
-                        <a href="#">다른금융
-                        </br>정보조회
-                        </a>
-                    </li>
-                    <li id="cML-2" class="centerMenu-list">
-                        <a href="#">조회</a>
-                    </li>
-                    <li id="cML-3" class="centerMenu-list">
-                        <a href="#">이체</a>
-                    </li>
-                    <li id="cML-4" class="centerMenu-list">
-                        <a href="#">환율</a>
-                    </li>
-                    <li id="cML-5" class="centerMenu-list">
-                        <a href="#">빠른메뉴
-                            <span class="right-btn"><img src="../클론image/검은색화살표오른쪽.png"></span></a>
-                    </li>
-                </ul>
+                <div class="centerMenu-in">
+                    <ul class="centerMenu-list-ul">
+                        <li id="cML-1" class="centerMenu-list">
+                            <a href="#">다른금융
+                            </br>정보조회
+                            </a>
+                        </li>
+                        <li id="cML-2" class="centerMenu-list">
+                            <a href="#">조회</a>
+                        </li>
+                        <li id="cML-3" class="centerMenu-list">
+                            <a href="#">이체</a>
+                        </li>
+                        <li id="cML-4" class="centerMenu-list">
+                            <a href="#">환율</a>
+                        </li>
+                        <li id="cML-5" class="centerMenu-list">
+                            <a href="#">빠른메뉴
+                                <span class="right-btn"><img src="../클론image/검은색화살표오른쪽.png"></span></a>
+                        </li>
+                    </ul>   
+                </div>
+                
             </div>
             <div class="nav">
                 <ul class="nav-1">
@@ -208,7 +215,7 @@
                     <li class="nav-1-in"><a href="#">상품/약관 공시</a></li>
                 </ul>
             </div>
-        </div>
+        
         <div class="section-2">
             <div class="introNews">
                 <div class="menu-left">
@@ -271,7 +278,7 @@
                             <div class="menu-img-box">
                                 <img class="img" src="../클론image/icon_set_099.png" alt="예금">
                                 <p class="menu-p">카드신청</p>
-                                <img class="img-hover" src="../클론image/icon_set_099_over.png" alt="">
+                                <!-- <img class="img-hover" src="../클론image/icon_set_099_over.png" alt=""> -->
                             </div>
                         </a></li>
                         <li class="menu-img-li"><a href="#">
@@ -290,7 +297,140 @@
                 </div>
             </div>
         </div>
-        div.
+        <div class="section-3">
+            <div class="service">
+                <div class="service-in">
+                    <a href="#"><h2>서비스</h2></a>
+                <ul class="service-ul">
+                    <li id="service-li1" class="service-li">
+                        <a href="#">
+                           <img src="../클론image/image_service_04_b.png" alt="">
+                           <div class="service-div">
+                                <h3>우리WON뱅킹</h3>
+                                <p>새 시대의 금융을 켜다, </br>
+                                    우리은행 대표 모바일뱅킹 APP
+                                </p>
+                           </div>
+                        </a>
+                    </li>
+                    <li id="service-li2" class="service-li">
+                        <a href="#">
+                           <img src="../클론image/image_service_05_mydata.png" alt="">
+                           <div class="service-div">
+                                <h3>마이데이터</h3>
+                                <p>나의 데이터가 가치가 되는</br>
+                                    새로운 경험을 체험해 보세요
+                                </p>
+                           </div>
+                        </a>
+                    </li>
+                    <li id="service-li3" class="service-li">
+                        <a href="#">
+                           <img src="../클론image/image_service_02_b.png" alt="">
+                           <div class="service-div">
+                                <h3>스마트간편신규</h3>
+                                <p>직원에게 추천받으신 상품을</br>
+                                    간편하게 가입하세요
+                                </p>
+                           </div>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section-4">
+            <div class="newEvent">
+                <div class="newEvent-in">
+                <div class="new">
+                    <div class="new-title">
+                        <h3 class="newEvent-h3">새소식</h3>
+                        <a href="#"><p>더보기<img class="title-img" src="../클론image/회색화살표오른쪽.png" alt=""></p></a>
+                    </div>
+                    <div class="new-contents">
+                        <p><a href="#">[채용] 2023년 하반기 우리은행 신입행원 채용 서류전형 합격자 발표</a></p>
+                        <p><a href="#">[공지] 모바일 · 인터넷뱅킹 타행이체 수수료, 타행자동이체 수수료 전액 면제 안내</a></p>
+                        <p><a href="#">[공지] 보이스피싱 상습범 바로 이 목소리를 들어보세요! 댓글이벤트</a></p>
+                    </div>
+                    <div class="new-date">
+                        <p>2023.10.11</p>
+                        <p>2023.02.08</p>
+                        <p>2023.10.11</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-title">
+                        <h3 class="newEvent-h3">이벤트</h3>
+                        <a href="#"><p>더보기<img class="title-img" src="../클론image/회색화살표오른쪽.png" alt=""></p></a>
+                    </div>
+                    <div class="event-contents">
+                        <p><a href="#">틴틴카드 사용하고 1만원 받자!</a></p>
+                        <p><a href="#">우리은행 첫 적금 만들고 1만원 받으세요!</a></p>
+                        <p><a href="#">직장인을 위한 특별한 혜택! 우리 직장인셀럽</a></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <div class="footer-ul1">
+                        <span class="footer-il1">
+                            <p>대표 1588-5000 <img src="../클론image/icon_more.png" alt=""></p>
+                        </span>
+                        <span class="footer-il1">
+                            <p>기타서비스<img src="../클론image/icon_more.png" alt=""></p>
+                        </span>
+                        <span class="footer-il1">
+                            <p>LANGUAGE<img src="../클론image/icon_more.png" alt=""></p>
+                        </span>
+                        <span class="footer-il1">
+                            <p>패밀리사이트<img src="../클론image/icon_more.png" alt=""></p>
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-top-right">
+                    <div class="footer-ul2">
+                        <span class="footer-il2"><img src="../클론image/icon_facebook_gray.png" alt=""></span>
+                        <span class="footer-il2"><img src="../클론image/icon_instagram_gray.png" alt=""></span>
+                        <span class="footer-il2"><img src="../클론image/icon_post_naver_gray.png" alt=""></span>
+                        <span class="footer-il2"><img src="../클론image/icon_youtube_gray.png" alt=""></span>
+                        <span class="footer-il2"><img src="../클론image/icon_navertv_gray.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <a href="#"><img src="../클론image/icon_woori.gif" alt=""></a>
+                </div>
+                <div class="footer-bottom-center">
+                    <div class="footer-ul3">
+                        <span class="footer-il3"><a href="#">은행소개</a></span>
+                        <span class="footer-il3"><a href="#">영업점안내</a></span>
+                        <span class="footer-il3"><a href="#">고객광장</a></span>
+                        <span class="footer-il3"><a href="#">개인정보처리방침</a></span>
+                        <span class="footer-il3"><a href="#">신용정보활용체제</a></span>
+                        <span class="footer-il3"><a href="#">개인신용정보관리보호</a></span>
+                        <span class="footer-il3"><a href="#">사고신고</a></span>
+                        <span class="footer-il3"><a href="#">전자민원접수</a></span>
+                        <span class="footer-il3"><a href="#">보호금융상품등록부</a></span>
+                        <span class="footer-il3"><a href="#">상품공시실</a></span>
+                        <span class="footer-il3"><a href="#">보안센터</a></span>
+                        <span class="footer-il3"><a href="#">웹접근성 이용안내</a></span>
+                    </div>
+                    <p>COPYRIGHTS WOORI BANK. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <div class="footer-ul4">
+                        <span class="footer-il4"><a href="#"><img src="../클론image/icon_kwacc_ib_2023.png" alt=""></a></span>
+                        <span class="footer-il4"><a href="#"><img src="../클론image/icon_1_new.gif" alt=""></a></span>
+                        <span class="footer-il4"><a href="#"><img src="../클론image/icon_20201215.png" alt=""></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
