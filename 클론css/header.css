@@ -1,8 +1,11 @@
 * {
     box-sizing: border-box;
-}
-#container {
     margin: 0;
+}
+
+#container {
+    margin-top: 5px;
+    width: 100%;
     display: flex;
     flex-direction: column; /* column 방향으로 정렬 */
     justify-content: center;
@@ -20,6 +23,7 @@ a {
     justify-content: center;
     align-items: center;
     float: left;
+    margin: 10px;
 }
 .login {
     background-image: url(../클론image/로그인.png);
@@ -69,6 +73,7 @@ a {
     text-align: center;
     display: flex;
     float:left;
+    z-index: 5;
 }
 
 /* -------------------- 인증센터 ----------------------- */
@@ -119,6 +124,7 @@ a {
     text-align: center;
     display: flex;
     float:left;
+    z-index: 5;
 
 }
 
@@ -130,7 +136,7 @@ a {
     white-space: nowrap; /* 화면 크기 변환시 줄바꿈 일어나지 않음 */
     
 }
-li:hover, .list-in-title:hover{
+.header-list:hover, .list-in-title:hover{
     color: rgb(2, 132, 200);
     text-decoration: underline; /* 밑줄 */
 }
@@ -144,22 +150,23 @@ li:hover, .list-in-title:hover{
     border-bottom: 2px solid gray;
 }
 
-ul {
+.header-list-ul {
     padding: 0;
+    margin-top: 15px;
     
 }
-li {
+.header-list {
     list-style: none;
     color: rgb(87, 87, 87);
 
 }
 
+
 .list-in-in {
     border: 1px solid black;
     background-color: white;
     width: 180px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px 10px 20px;
     position: absolute;
     top: 30px;
     left: -60px;
@@ -170,20 +177,30 @@ li {
 .list-in:hover .list-in-in {
     opacity: 1;
 }
+.aLan {
+    
+}
 
 /* -------------------- 배너 ----------------------- */
+
+.section {
+    position: relative;
+   
+}
 
 [name="slide"] {display:none;}
 .slidebox {
     max-width: 1920px;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
+    height: 520px;
 }
-.slidebox img {max-width: 100%;}
+.slidebox img {width: 100%; height:520px;}
 .slidebox .slidelist {
     white-space: nowrap;
     font-size: 0;
     overflow: hidden;
+    padding: 0;
 }
 .slidebox .slideitem {
     position: relative;
@@ -195,32 +212,32 @@ li {
 .slidebox .slideitem label {
     position: absolute;
     z-index: 1;
-    top:50%;
+    top:84%;
     transform: translateY(-50%);
     padding: 20px;
     cursor: pointer;
 
 }
-label.left {
-    left: 20px;
+label.left { /* 왼쪽 화살표 */
+    right: 500px;
     background-image: url(../클론image/왼쪽화살표.png);
     background-position: center center;
-    background-size: 50%;
+    background-size: 23%;
     background-repeat: no-repeat;
 }
-label.right {
-    right: 20px;
+label.right { /* 오른쪽 화살표 */
+    right: 470px;
     background-image: url(../클론image/오른쪽화살표.png);
     background-position: center center;
-    background-size: 50%;
+    background-size: 23%;
     background-repeat: no-repeat;
 }
 
-[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0); animation:slide01 20s infinite;}
+/* [id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0); animation:slide01 20s infinite;}
 [id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%); animation:slide02 20s infinite;}
 [id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%); animation:slide03 20s infinite;}
 [id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%); animation:slide04 20s infinite;}
-[id="slide05"]:checked ~ .slidelist .slideitem {transform:translateX(-400%); animation:slide05 20s infinite;}
+[id="slide05"]:checked ~ .slidelist .slideitem {transform:translateX(-400%); animation:slide05 20s infinite;} */
 
 @keyframes slide01 {
     0% {left: 0%;}
@@ -287,3 +304,150 @@ label.right {
     98% {left: -400%;}
     100% {left: 0%;}
 }
+
+/* -------------------- 센터메뉴 ----------------------- */
+.centerMenu {
+    width: 100vw;
+}
+.centerMenu-list-ul {
+    
+    height: 75px;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 165px 145px 145px 145px 165px;
+    position: absolute;
+    bottom: -35px;
+    z-index: 5;
+    border-radius: 40px;
+    box-shadow: 1px 1px 5px 5px lightgray;
+
+}
+.centerMenu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+
+#cML-1 {
+    background-color: #0082cd;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    color: white;
+    font-size: 20px;
+}
+/* #cML-2::after, #cML-3::after { // 구분선
+    content: "|";
+    width: 1px;
+    height: 19px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #ccc;
+    display: absolute;
+} */
+#cML-2, #cML-3, #cML-4 {
+    background-color: rgb(58, 141, 253);
+    color: white;
+}
+#cML-5 {
+    background-color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+}
+.right-btn {
+    background-repeat: no-repeat; /* 이미지 반복 안 함 */
+    background-size: cover; /* 이미지 꽉 채우기 */
+    
+}
+
+/* -------------------- 센터 메뉴 밑 ----------------------- */
+
+.nav {
+    width: 100vw;
+}
+.nav-1 {
+    list-style: none;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+
+}
+
+.nav-1-in {
+    color: gray;
+    width: 120px;
+    white-space: nowrap; /* 화면 크기 변환시 줄바꿈 일어나지 않음 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* -------------------- 금융상품 / 카드 ----------------------- */
+.section-2 {
+    margin-top: 90px;
+    width: 100vw;
+}
+.introNews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+h2 {
+    margin-top: 30px;
+}
+.menu-left .menu-img {
+    width: 700px;
+}
+.menu-right .menu-img {
+    width: 300px;
+    
+}
+.menu-img {
+    padding: 30px 0px 30px 0px;
+    list-style: none;
+    display: flex;
+    float: left;
+    justify-content: left;
+    align-items: center;
+}
+
+.menu-img-li {
+    width: 90px;
+    height: 80px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    border: 1px solid blue;
+    border-radius: 100%;
+}
+
+.menu-p {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    font-size: 12px;
+    
+}
+
+.menu-img-li .img-hover {
+    display: none;
+}
+.menu-img-li:hover img.img {
+    display: none;
+}
+.menu-img-li:hover img.img-hover {
+    display: block;
+}
+
+
