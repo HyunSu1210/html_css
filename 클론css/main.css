@@ -8,7 +8,6 @@
 #container {
     margin-top: 5px;
     padding: 0;
-    width: 100%;
     display: flex;
     flex-direction: column; /* column 방향으로 정렬 */
     justify-content: center;
@@ -194,8 +193,7 @@ a {
 /* -------------------- 배너 ----------------------- */
 [name="slide"] {display:none;}
 .slidebox {
-    max-width: 1920px;
-    width: 100vw;
+    width: 1000px;
     margin: 0 auto;
     height: 520px;
 }
@@ -327,9 +325,6 @@ label.right { /* 오른쪽 화살표 */
     padding: 0;
     display: grid;
     grid-template-columns: 165px 145px 145px 145px 165px;
-    position: absolute;
-    bottom: 270px;
-    z-index: 5;
     border-radius: 40px;
     box-shadow: 1px 1px 5px 5px lightgray;
 
@@ -387,10 +382,8 @@ label.right { /* 오른쪽 화살표 */
     float: left;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 230px;
+    margin-top: 30px;
     width: 100%;
-
 }
 
 .nav-1-in, .nav-1-in > a {
@@ -407,6 +400,7 @@ label.right { /* 오른쪽 화살표 */
 /* -------------------- 금융상품 / 카드 ----------------------- */
 .section-2 {
     margin-top: 90px;
+    margin-left: 30px;
     width: 100vw;
 }
 .introNews {
@@ -468,6 +462,7 @@ h2 {
 /* -------------------- 서비스 ----------------------- */
 .section-3 {
     width: 100vw;
+    margin-left: 30px;
 }
 .service {
     display: flex;
@@ -646,6 +641,3 @@ h3 {
     width: 20px;
     height: 20px;
 }
-
-
-
